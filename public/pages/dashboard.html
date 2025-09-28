@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Screen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+    <h2>User Points: <span id="points">0</span></h2>
+
+    <button onclick="openTasks()">Tasks</button>
+    <button onclick="exitApp()">Exit</button>
+  </div>
+
+  <script>
+    function openTasks() {
+      window.location.href = "tasks.html";
+    }
+    function exitApp() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+  </html>
