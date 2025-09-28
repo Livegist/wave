@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcome-msg">The word of the day is display here.</br>
+Loading message...</h1>
+    <button onclick="enterApp()">Enter App</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadWelcomeMessage();
+    function enterApp() {
+      window.location.href = "user.html";
+    }
+  </script>
+</body>
+</html>
