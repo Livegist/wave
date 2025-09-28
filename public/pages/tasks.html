@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Tasks</h2>
+    <div class="task-list">
+      <button class="task" onclick="openTask('task1.html')">Task 1</button>
+      <button class="task" onclick="openTask('task2.html')">Task 2</button>
+      <button class="task" onclick="openTask('task3.html')">Task 3</button>
+    </div>
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <script>
+    function openTask(taskFile) {
+      window.location.href = "tasks/" + taskFile;
+    }
+    function goHome() {
+      window.location.href = "user.html";
+    }
+    function goTask1() {
+      window.location.href = "tasks1.html";
+        }
+  </script>
+</body>
+</html>
